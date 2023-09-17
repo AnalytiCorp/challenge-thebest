@@ -1,0 +1,33 @@
+// Install venv::: windows
+pip install virtualenv
+
+// Install venv::: linux
+pip3 install virtualenv
+
+// Create environment:: windows powershell
+python -m venv venv    
+.\venv\Scripts\Activate.ps1
+
+// Create environment:: windows cmd
+virtualenv .venv
+.venv/bin/activate
+
+// Create environment:: Linux
+virtualenv .venv
+source .venv/bin/activate
+
+// Deactivate venv
+deactivate
+
+// Create requirements::
+pip freeze > requirements.txt
+
+// Requeriments install:: 
+pip install -r  requirements.txt
+
+// Streamlit install::
+pip install streamlit
+
+// Streamlit Using: 
+streamlit run nome_do_seu_arquivo.py
+
